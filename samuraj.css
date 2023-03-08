@@ -1,0 +1,430 @@
+:root{
+--red:rgb(142, 18, 18);    
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+p{
+    font-size: 1.5rem;
+    color: rgb(103, 96, 96);
+     }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    background-color: white;
+    box-shadow: 0 0 2rem  rgba(0, 0, 0, 0.61); /* Box-shadow kutuların arkasına gölge verir. ilk değer gölgenin yataydaki pozisyonu,ikincisi dikeydeki,üçüncüsü fıluluk derecesi. */
+    position: fixed; /* Verildiği elamanı sabitler */
+    width: 100%; /* Width 100% genişlik içinde bulunduğu elementin genişliği kadar */
+    z-index: 2; /*Position olan elementlerin hangisinin z-index'i yüksekse o en üstte olur. */
+    
+
+
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+
+.logo span{
+    color:var(--red);
+    
+
+}
+
+.menu a {
+    margin: 0 .5rem;
+    transition:all 0.5s;
+    font-size: 1.5rem;
+}
+.menu a:hover{
+
+    color: var(--red);
+}
+
+.icons a {
+    margin: 0 .5rem;
+    transition: all 0.5s; /* Transition cursor üzerine geldiğinde kırmızısının saniyesini ayarlar. */
+    font-size: 1.5rem;
+}
+
+.icons a:hover{
+    color: var(--red);
+    
+
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(images/292112.jpg);
+    background-position: center right; /* Backgrounda konan resmin içindeki karekteri nerde görünmesini istediysenk oraya koyar. */
+    background-size: cover;/*Backgrounda konan resmi coverlar ve uygun hale getirir.*/
+    padding: 0 10rem;
+    padding-top: 10rem;
+    font-size: 1.5rem;
+
+
+}
+
+.hero h1{
+    color: var(--red);
+    background-color: transparent;/*Background-colorı kaldırmak için transparent yazılır.*/
+    text-align: left;
+    padding: 0;
+    font-size: 3.15rem;
+}
+
+.hero p{
+    width: 40rem;
+    margin: 1.5rem 0;
+}
+
+.hero button{
+    padding: 1rem 3rem;
+    border-radius: 20rem;
+    background-color: rgb(37, 31, 31);
+    color: white;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ;
+}
+
+.hero button:hover{
+    background-color: var(--red);
+}
+h1{
+    background-color: rgba(255, 192, 203, 0.247);
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.15rem;
+
+}
+
+h1 span{
+color: var(--red);
+}
+
+.about{
+    padding: 4rem 10rem;
+
+
+}
+
+.about-cont{
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    align-items: flex-start;
+}
+
+.giff-cont{
+    box-shadow: 0 0 1rem rgba(22, 22, 22, 0.4);
+    position: relative;/*İçindeki abolute elementleri hizalamak için*/
+    z-index: 1;
+
+    
+}
+
+.giff-cont img{
+    display: block;
+    border: 1rem solid white;
+    
+
+}
+
+.giff-cont .uzerinde{
+    position: absolute;/*Akıştan çıkardığımız elementeti başka bir elementin üzerinde hizalamak için*/
+    top: 50%; /* İçinde bulunduğu relative elamanın yükseklğinin yarısı kadar üstten boşluk verir. */
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    transform: translateY(-50%);/*Bir elamanı kendi yüksekliğinin yarısı kadar yukarı hareket ettirir.*/
+    font-weight: bolder;
+    mix-blend-mode: screen;/*Siyah olan bütün yazıları şekilleri borderları transparan yapar.*/
+
+
+
+
+}
+
+
+.giff-yan p{
+
+    margin: 1.5rem 0; 
+
+    
+}
+.giff-yan h3{
+    font-size: 1.5rem;
+   
+}
+
+
+.giff-yan button{
+    border-radius: 20rem;
+    background-color: #333;
+    color: white;
+    padding: 0.6rem 3rem;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.giff-yan button:hover{
+    
+    background-color: var(--red);
+}
+
+.icons-container{
+    background-color: #ddd;
+    display: flex;
+    padding: 2rem 10rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+
+}
+
+.icons-container .div1{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    border: 0.5rem solid #ccc;
+    padding: 1.5rem;
+    align-items: center;
+    flex: 1 1 25rem;
+
+}
+
+.icons-container .div1 img{
+    height: 5rem;
+}
+
+
+.yeniciltler{
+    padding: 4rem 10rem;
+
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2.5rem;
+    
+    
+}
+
+.box-container .box{
+    border: 1rem #bbb solid;
+    flex: 1 1 25rem;
+    text-align: center;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.171);
+    
+    
+    
+
+}
+.box-container .box:hover .imag-alt{
+    bottom: 0;
+
+}
+.yeniciltler .imag-alt{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: -7rem;
+    transition: all 0.5s;
+
+}
+
+.box-container .box .imag img{
+    transition: all 0.5s;
+    height: 20rem;
+}
+
+.yeniciltler .imag{
+    position: relative;
+    overflow: hidden;/* Bu elemanın sınırları dışına taşan elamanlarını saklar */
+}
+
+.box-container .box .discount{
+    position: absolute;
+    background-color: rgba(255, 192, 203, 0.235);
+    left: 1rem;
+    top: 1rem;
+    padding: 1rem;
+}
+
+
+.yeniciltler .imag-alt a{
+    background-color: var(--red);
+    color: white;
+    padding: 1rem;
+    flex-grow: 1;
+    transition: all 0.5s;
+}
+
+.yeniciltler .imag-alt a:hover{
+    background-color: #555;
+}
+.imag-alt .cartbtn{
+    border-left: 0.1rem solid #fff7;
+    border-right: 0.1rem solid #fff7;
+}
+
+.box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+
+.urun-bilgi span{
+    text-decoration: line-through;
+    color: #555;
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+
+.urun-bilgi{
+    color:var(--red);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.yorumlar{
+
+   padding: 4rem 10rem;
+  
+
+}
+
+.yorumic{
+    
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.yorumic .yorum1{
+    
+   
+    border: 1rem #bbb solid;
+    border-radius: 1rem;
+    box-shadow: rgba(85, 85, 85, 0.468) ;
+    margin-top: 2rem;
+    flex: 1 1 25rem;
+    padding: 2rem;
+    position: relative;
+
+
+    
+}
+
+
+.yorum1 .stars a {
+    color: var(--red);
+    font-size: 1.5rem;
+   
+}
+
+.yorum1 p{
+   
+    padding: 1rem 1.5rem ;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.yorum1 .foto1{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    
+}
+.yorum1 .divuser{
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+
+.divuser .fa-quote-right{
+
+    position: absolute;
+    font-size: 6rem;
+    color: rgba(128, 121, 121, 0.584);
+    right: 2rem;
+
+}
+
+footer{
+
+    
+    padding:0 10rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
+
+
+.footerust{
+    display: flex;
+    text-align: left;
+   
+
+
+
+}
+
+footer div{
+
+    flex: 1 1 15rem;
+    
+}
+
+footer a{
+    margin-bottom: 1rem;
+    display: block;
+    transition: all 0.4s;
+    font-size: 1.5rem;
+    
+
+}
+
+footer a:hover{
+    color: var(--red);
+    text-decoration: underline;
+}
+
+footer h3{
+    margin-bottom: 1rem;
+}
+
+hr{
+    margin: 1.5rem 0;
+}
